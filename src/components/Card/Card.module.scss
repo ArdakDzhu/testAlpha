@@ -1,0 +1,41 @@
+.Container{
+  margin: 0 auto;
+  width: 400px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+  overflow: scroll;
+
+  img{
+    padding: 10px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .bottom{
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: gray;
+    color: white;
+
+    button{
+      background: url("../../images/dislike.png") no-repeat center center / contain;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .active{
+    button{
+      background: url("../../images/like.png") no-repeat center center / contain;
+    }
+  }
+}
